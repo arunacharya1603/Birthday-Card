@@ -1,0 +1,96 @@
+
+* {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  body {
+    background: #008888;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(https://imgs.search.brave.com/sZCHaZ-6w92FgeBMC6eYQ5VW2br3IhSxf_ot0NkivOc/rs:fit:600:900:1/g:ce/aHR0cHM6Ly9iZXlv/bmRmcm9zdGluZy5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTkvMDEvQ2hvY29s/YXRlLUNha2UtUmVj/aXBlLTAwOC5qcGc);
+    background-repeat: space;  
+}
+
+  
+  .card {
+    width: 30%;
+    background: #ffffff;
+    border-radius: 4px;
+    height: 85vh;
+    width: 80vw;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    overflow: hidden;
+  }
+  
+  @media only screen and (min-width: 1000px) {
+    .card {
+      flex-direction: row-reverse;
+    }
+    .card img.birthday {
+      width: 30%;
+      max-width: 50vw;
+      max-height: unset;
+    }
+  }
+  
+  @media only screen and (max-height: 640px) {
+    .card {
+      flex-direction: row-reverse;
+    }
+    .card img.birthday {
+      width: 31%;
+      max-width: 50vw;
+      max-height: unset;
+    }
+  }
+
+  .birthday{
+    padding: 42px;
+   
+  }
+  
+  img.birthday {
+    max-height: 50vh;
+ 
+  }
+  .card:hover .birthday{
+    left: 0%;
+    filter: grayscale(.4);
+    transform: scale(1.2);
+    z-index: 2;
+  }
+  
+  .text {
+    padding: 1em;
+  }
+  
+  .muted {
+    opacity: 0.8;
+  }
+  
+  .space {
+    height: 100px;
+  }
+
+  .S{
+    color: red;
+  }
+
+  .circle{
+    animation: rotateHue 2s alternate infinite;
+  }
+
+  @keyframes rotateHue {
+    to{
+        filter: hue-rotate(1turn);
+    }
+  }
